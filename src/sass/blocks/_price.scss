@@ -1,0 +1,32 @@
+.price {
+  position: relative;
+  border-left:1px solid #F0EEEB;
+  padding-left:32px;
+  &-your {
+    font-size: 14px;
+    line-height: 30px;
+    color: #989691;
+    span {
+      color: $blue;
+    }
+  }
+
+  &-amoumt {
+    color: #383736;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  &-current {
+    width: 200px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #989691;
+    span {
+      color: $red;
+    }
+  }
+
+}

@@ -1,0 +1,34 @@
+.content {
+  flex-basis: 50%;
+  &-descr {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 1rem 3rem;
+    grid-auto-flow: dense;
+
+  }
+  &-title {
+    font-size: 24px;
+    line-height: 36px;
+    color: #383736;
+  }
+  &-descr {
+    padding-top: 8px;
+  }
+}
+.property {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  &__name {
+    font-size: 12px;
+    line-height: 16px;
+    color: #989691;
+  }
+  &__value {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #383736;
+  }
+}

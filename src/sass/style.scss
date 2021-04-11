@@ -4,26 +4,34 @@
 @import 'base/variables';
 @import 'base/mixins';
 
-* {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
 .main {
-    max-width: 1280px;
-    height: 306px;
+    max-width: 100vw;
+    height: 100vh;
     margin: 0 auto;
-    background: #E5E5E5;
+    background-color: #E5E5E5;
     padding: 40px 120px;
+
 }
 
-.content{
-    height: 226px;
+.container{
+    position: relative;
+    // height: 226px;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    // justify-content: space-between;
+    flex-wrap: wrap;
     background: #FFFFFF;
+    padding: 24px;
 }
+
+.cross {
+    position: absolute;
+    right: 1%;
+    top: 5%;
+  }
 
 @import 'blocks/image';
+@import 'blocks/content';
+@import 'blocks/price';
+@import 'blocks/buttons';
